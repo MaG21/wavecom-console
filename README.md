@@ -13,7 +13,7 @@ Compile
 -------
     make 
 
-KNOWN BUGS
+Known BUGS
 ----------
 This program processes the dots (.) as CTRL-Z, so it may be a little difficult
 to send a SMS with dots in it.
