@@ -50,8 +50,9 @@ open_device(char *dev_path, struct device *dev)
 /*
  * returns:
  *    on success, the number of bytes written.
- *    on error, -1 is returned, and errno is set appropriately.
+ *    on error, -1 is returned and errno is set appropriately.
  */
+int
 device_write_string(int fd, char *data)
 {
 	return write(fd, data, strlen(data));
@@ -164,7 +165,6 @@ void
 proc_cmd(char *cmd, uint8_t *status)
 {
 	for(;*cmd!='\0'; cmd++) {
-
 		if(*cmd=='.') {
 			*cmd=CTRL_Z;
 			*status	= 0;
@@ -172,7 +172,6 @@ proc_cmd(char *cmd, uint8_t *status)
 	}
   return;
 }
-
 
 /* close device properly */
 void
