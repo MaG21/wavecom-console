@@ -13,6 +13,11 @@ Compile
 -------
     make 
 
+KNOWN BUGS
+----------
+This program processes the dots (.) as CTRL-Z, so it may be a little difficult
+to send a SMS with dots in it.
+
 License
 -------
 This content is released under the MIT License. For more information
